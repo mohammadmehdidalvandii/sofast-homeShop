@@ -1,7 +1,7 @@
 .navBar{
     display: block;
     width: 100%;
-    margin: 1rem 0;
+    margin: 0.3rem 0;
 }
 .navbar_wrapper{
     display: flex;
@@ -43,6 +43,7 @@
     font-weight: 700;
     background-color: var(--colorBrown);
     padding: 0.4rem 0.6rem;
+    border-radius: 0.6rem;
     color: var(--colorWhite);
 }
 

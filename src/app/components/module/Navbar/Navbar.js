@@ -1,15 +1,23 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from './Navbar.module.css';
 import Link from 'next/link';
 import { FaUser } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaBars , FaTimes } from "react-icons/fa";
+import { usePathname } from 'next/navigation';
 
 
 function Navbar() {
     const [showMenu , setShowMenu] = useState(false)
+    const [routesMenu , setRouteMenu] = useState('/')
+    const routeName = usePathname()
+
+    useEffect(()=>{
+        const pathName = routeName
+        setRouteMenu(pathName)
+    },[routeName])
 
     const handlerShowMenu = ()=>{
         setShowMenu(!showMenu)
@@ -24,19 +32,19 @@ function Navbar() {
                 </Link>
                 <ul className={style.navbar_items}>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbar_item_link}>خانه</Link>
+                        <Link href='/' className={routesMenu === '/' ? style.navbar_item_link_active : style.navbar_item_link}>خانه</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbar_item_link}>درباره ما</Link>
+                        <Link href='/About' className={routesMenu === '/About' ? style.navbar_item_link_active : style.navbar_item_link}>درباره ما</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbar_item_link}>فروشگاه</Link>
+                        <Link href='/Shop' className={routesMenu === '/Shop' ? style.navbar_item_link_active : style.navbar_item_link}>فروشگاه</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbar_item_link}>وبلاگ</Link>
+                        <Link href='/Article' className={routesMenu === '/Article' ? style.navbar_item_link_active : style.navbar_item_link}>وبلاگ</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbar_item_link}>تماس با ما</Link>
+                        <Link href='/Contact' className={routesMenu === '/Contact' ? style.navbar_item_link_active : style.navbar_item_link}>تماس با ما</Link>
                     </li>
                 </ul>
 
@@ -58,7 +66,7 @@ function Navbar() {
         </div>
     </section>
 
-    <section className={style.navbarRes}>
+    <section className={ `${style.navbarRes} ${"d-lg-none d-block"}`}>
         <div className="containers">
             <div className={style.navbarRes_wrapper}>
                 <Link href='/' className={style.navbarRes_link_logo}>
@@ -77,28 +85,28 @@ function Navbar() {
             {showMenu && (
                 <ul className={style.navbarRes_items}>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>سبد خرید</Link>
+                        <Link href='/Basket' className={routesMenu === '/Basket' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>سبد خرید</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>خانه</Link>
+                        <Link href='/' className={routesMenu === '/' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>خانه</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>درباره ما</Link>
+                        <Link href='/About' className={routesMenu === '/About' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>درباره ما</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>فروشگاه</Link>
+                        <Link href='/Shop' className={routesMenu === '/Shop' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>فروشگاه</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>وبلاگ</Link>
+                        <Link href='/Article' className={routesMenu === '/Article' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>وبلاگ</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>تماس با ما</Link>
+                        <Link href='/Contact' className={routesMenu === '/Contact' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>تماس با ما</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>ورود</Link>
+                        <Link href='/Login' className={routesMenu === '/Login' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>ورود</Link>
                     </li>
                     <li className={style.navbar_item}>
-                        <Link href='/' className={style.navbarRes_item_link}>ثبت نام</Link>
+                        <Link href='/Register' className={routesMenu === '/Register' ? style.navbarRes_item_link_active : style.navbarRes_item_link }>ثبت نام</Link>
                     </li>
                 </ul>
             )}
