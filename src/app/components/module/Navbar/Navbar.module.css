@@ -3,6 +3,25 @@
     width: 100%;
     margin: 0.3rem 0;
 }
+.navbar_fixed{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--colorWhite);
+    transition:  background-color 0.4s ease-in;
+    border-bottom: 3px solid var(--colorBrown);
+    animation: fadeInDownBig 0.6s ease-in ;
+    z-index: 999;
+}
+@keyframes fadeInDownBig {
+    0%{
+        transform:  translate3d(0 , -100% ,0);
+    }
+    100%{
+        transform: none;
+    }
+}
 .navbar_wrapper{
     display: flex;
     align-items: center;
