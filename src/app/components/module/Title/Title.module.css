@@ -1,0 +1,23 @@
+.content_title{
+    display: block;
+    width: 100%;
+}
+.content_title_text{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    font-family: var(--black) !important;
+    font-size: 2.5rem !important;
+    font-weight: bold !important;
+}
+.content_title_text::after{
+    display: block;
+    text-align: center;
+    margin: 0.7rem auto;
+    content: "";
+    width: 8%;
+    height: 0.2rem;
+    background-color: var(--colorBrown);
+}
