@@ -1,0 +1,42 @@
+.order{
+    display: block;
+    margin-top: 6rem;
+    width: 100%;
+}
+.order_item{
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.order_img{
+    width: 100%;
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+.order_content{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 3rem;
+    text-align: center;
+    color: var(--colorWhite);
+    background-color: rgba(0,0,0,0.3);
+    padding: 1rem;
+}
+.order_text{
+    font-size: 1.5rem;
+}
+.order_title{
+    font-family: var(--black);
+    font-size: 2.5rem;
+}
+.order_link{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--colorWhite);
+    transition: all 0.4s ease-out;
+}
+.order_link:hover{
+    color: var(--colorBrown);
+}
