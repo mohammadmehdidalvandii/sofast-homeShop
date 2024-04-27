@@ -5,6 +5,7 @@ import Trending from './components/template/home/Trending/Trending'
 import Product from './components/template/home/Product/Product'
 import Order from './components/template/home/Order/Order'
 import Score from './components/template/home/Score/Score'
+import Comments from './components/template/home/Comments/Comments'
 
 function page() {
   return (
@@ -14,7 +15,8 @@ function page() {
       <Trending/>
       <Product/>
       <Order/>
-      <Score/>
+      <Score/>  
+      <Comments/>
       <br /><br /><br /><br /><br /><br />
     </>
   )
