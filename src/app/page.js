@@ -4,6 +4,7 @@ import Banner from './components/template/home/Banner/Banner'
 import Trending from './components/template/home/Trending/Trending'
 import Product from './components/template/home/Product/Product'
 import Order from './components/template/home/Order/Order'
+import Score from './components/template/home/Score/Score'
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
       <Trending/>
       <Product/>
       <Order/>
+      <Score/>
       <br /><br /><br /><br /><br /><br />
     </>
   )
