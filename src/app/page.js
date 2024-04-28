@@ -7,6 +7,7 @@ import Order from './components/template/home/Order/Order'
 import Score from './components/template/home/Score/Score'
 import Comments from './components/template/home/Comments/Comments'
 import Blog from './components/template/home/Blog/Blog'
+import Overview from './components/module/Overview/Overview'
 
 function page() {
   return (
@@ -19,6 +20,7 @@ function page() {
       <Score/>  
       <Comments/>
       <Blog/>
+      <Overview/>
       <br /><br /><br /><br /><br /><br />
     </>
   )
