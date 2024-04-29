@@ -1,0 +1,44 @@
+.pageHeader{
+    display: block;
+    width: 100%;
+    height: 50dvh;
+    background: url(/images/pageHeader.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.pageHeader_content{
+    display: block;
+    margin: 7rem auto;
+}
+.pageHeader_title{
+    display: block;
+    font-family: var(--black) !important;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.pageHeader_wrapper{
+    display: flex;
+    align-items: center;
+}
+.pageHeader_link{
+    display: block;
+    margin-left: 1rem;   
+    text-decoration: none;
+    font-family: var(--bold) !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--colorNavyBlue);
+    transition: all 0.4s ease-out;
+}
+.pageHeader_link:hover{
+    color: var(--colorBrown);
+}
+.pageHeader_text{
+    display: block;
+    margin-right: 1rem;
+    font-family: var(--bold) !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--colorNavyBlue);
+}
