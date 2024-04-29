@@ -1,0 +1,40 @@
+.about{
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+}
+.about_images{
+    display: block;
+    position: relative;
+}
+.about_img:last-child{
+    position: absolute;
+    top: 7rem;
+    left: 3rem;
+}
+.about_content{
+    display: block;
+    width: 100%;
+
+}
+.about_title{
+    display: block;
+    font-family: var(--black) !important;
+    font-size: 2.5rem;
+    color: var(--colorNavyBlue);
+    font-weight: bold;
+}
+.about_desc{
+    font-size: 1.1rem;
+    color: var(--colorGray);
+    font-weight: 600;
+    line-height: 1.7;
+}
+.about_minTitle{
+    display: block;
+    margin-top: 2rem;
+    font-family: var(--black) !important;
+    font-size: 1.6rem;
+    color: var(--colorNavyBlue);
+    font-weight: bold;
+}
