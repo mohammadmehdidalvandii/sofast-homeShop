@@ -1,3 +1,4 @@
+import ScrollToTop from '@/utils/ScrollToTop';
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Inter } from 'next/font/google'
@@ -12,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir='rtl'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <ScrollToTop/>
+        </body>
     </html>
   )
 }

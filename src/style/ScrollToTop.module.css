@@ -1,0 +1,46 @@
+.buttonToTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    bottom: 1.5rem;
+    left: 2rem;
+    width: 3rem;  
+    height: 3rem;
+    border-radius: 0.4rem;
+    background-color: var(--colorBrown);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--colorWhite);
+    outline: none;
+    border: none;
+    transition: all 0.4s ease-in;
+}
+.buttonToTop:hover{
+    background-color: var(--colorNavyBlue);
+}
+
+.buttonToTop_Visible{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 1 !important;
+    bottom: 1.5rem;
+    left: 2rem;
+    width: 3rem;  
+    height: 3rem;
+    border-radius: 0.4rem;
+    background-color: var(--colorBrown);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--colorWhite);
+    outline: none;
+    border: none;
+    transition: all 0.4s ease-in;
+}
+
+.buttonToTop_Visible:hover{
+    background-color: var(--colorNavyBlue);
+}
