@@ -12,7 +12,7 @@ function Banner() {
                         <span className={style.banner_content_text}>پیشنهاد بزرگ ۵۰% تخفیف</span>
                         <h1 className={style.banner_content_title}>مجموعه جدید فروش تابستانی</h1>
                         <p className={style.content_desc}>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-                        <Link href='/' className={style.banner_link}>خرید</Link>
+                        <Link href='/' className={`${style.banner_link} ${"button"}`}>خرید</Link>
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">

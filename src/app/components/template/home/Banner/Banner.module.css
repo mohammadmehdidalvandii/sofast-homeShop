@@ -31,24 +31,6 @@
     font-size: 1.4rem;
     color: var(--colorNavyBlue);
 }
-.banner_link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 120px;
-    height: 2.5rem;
-    background-color: var(--colorBrown);
-    border-radius: 0.4rem;
-    font-family: var(--bold);
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--colorWhite);
-    transition: all 0.4s ease-in;
-}
-.banner_link:hover{
-    background-color: var(--colorBlack);
-}
 .banner_img{
     display: block;
     margin: 1.5rem auto;

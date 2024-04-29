@@ -9,7 +9,7 @@ function BlogCard() {
     <div className={style.blogCard_content}>
         <span className={style.blogCard_date}>11 فروردین 1403</span>
         <p className={style.blogCard_desc}>سبک ها دلایلی برای ساخت هستند</p>
-        <Link href='/' className={style.blogCard_link}>بیشتر</Link>
+        <Link href='/' className={`${style.blogCard_link} ${"button"}`}>بیشتر</Link>
     </div>
 </div>
   )
