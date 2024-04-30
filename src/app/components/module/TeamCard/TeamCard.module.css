@@ -1,0 +1,65 @@
+.teamCard{
+    display: block;
+    width: 100%;
+    border: 2px solid var(--colorBrown);
+    position: relative;
+    margin-bottom: 1.5rem;
+    transition: all 0.4s ease-out;
+}
+.teamCard:hover .teamCard_media{
+    opacity: 1 ;
+}
+.teamCard_img{
+    width: 100%;
+}
+.teamCard_media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 40%;
+    left: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+.teamCard_media_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--colorWhite);
+    color: var(--colorBrown);
+    font-size: 1.6rem;
+    transition: all 0.4s ease-out;
+}
+.teamCard_media_link:hover{
+    background-color: var(--colorBrown);
+    color: var(--colorWhite);
+}
+.teamCard_content{
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+.teamCard_name_link{
+    display: block;
+    text-decoration: none;
+    font-family: var(--black) !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--colorNavyBlue);
+    transition: all 0.4s ease-out;
+}
+.teamCard_name_link:hover{
+    color: var(--colorBrown);
+}
+.teamCard_job{
+    display: block;
+    font-family: var(--bold) !important;
+    font-size: 1.1rem;
+    color: var(--colorGray);
+}
