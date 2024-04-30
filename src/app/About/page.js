@@ -4,6 +4,7 @@ import Overview from '../components/module/Overview/Overview';
 import Footer from '../components/module/Footer/Footer';
 import PageHeader from '../components/module/PageHeader/PageHeader';
 import About from '../components/template/about/About/About';
+import Teams from '../components/template/about/About/Teams/Teams';
 
 function page() {
   return (
@@ -14,6 +15,7 @@ function page() {
         text='درباره ما'
     />
     <About/>
+    <Teams/>
     <Overview/>
     <Footer/>
     </>
