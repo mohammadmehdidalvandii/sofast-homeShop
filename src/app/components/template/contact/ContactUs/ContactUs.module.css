@@ -1,0 +1,34 @@
+.contactUs{
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+}
+.contactUs_item{
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.contactUs_item_icon{
+    font-size: 2rem;
+    color: var(--colorNavyBlue);
+}
+.contactUs_item_content{
+    display: block;
+    margin-right: 1rem;
+}
+.contactUs_item_title{
+    display: block;
+    font-family: var(--black) !important;
+    font-size: 2rem !important;
+    font-weight: bolder;
+}
+.contactUs_item_text{
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--colorGray);
+}
+.contactUs_img{
+    width: 100%;
+}
