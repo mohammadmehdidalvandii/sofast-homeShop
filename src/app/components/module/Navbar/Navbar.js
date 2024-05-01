@@ -64,7 +64,7 @@ function Navbar() {
                 </ul>
 
                 <div className={style.navbar_wrapper_link}>
-                    <Link href='/' className={style.navbar_link_menu}>
+                    <Link href='/LoginRegister' className={style.navbar_link_menu}>
                         <span className={style.navbar_link_icon}><FaUser/></span>
                     </Link>
                     <Link href='/' className={style.navbar_link_menu}>
