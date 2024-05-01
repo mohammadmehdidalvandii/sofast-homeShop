@@ -67,7 +67,7 @@ function Navbar() {
                     <Link href='/LoginRegister' className={style.navbar_link_menu}>
                         <span className={style.navbar_link_icon}><FaUser/></span>
                     </Link>
-                    <Link href='/' className={style.navbar_link_menu}>
+                    <Link href='/Wishlist' className={style.navbar_link_menu}>
                         <span className={style.navbar_link_icon}><FaRegHeart/></span>
                     </Link>
                     <Link href='/' className={style.navbar_link_menu}>
