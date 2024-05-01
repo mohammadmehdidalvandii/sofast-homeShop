@@ -115,6 +115,21 @@ background-color: var(--colorNavyBlue);
   font-weight: 700;
   color: var(--colorNavyBlue);
 }
+.form_very{
+  display: flex;
+  align-items: center;
+}
+.form_very_input{
+  accent-color: var(--colorBrown);
+}
+.form_very_text{
+  display: block;
+  font-family: var(--black);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--colorNavyBlue);
+  padding-right: 0.4rem;
+}
 .form_link_forget{
   display: block;
   text-decoration: none;

@@ -1,0 +1,8 @@
+.register{
+    display: block;
+    width: 100%;
+    border: 1px solid var(--colorGray);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
