@@ -74,5 +74,63 @@ body{
 background-color: var(--colorNavyBlue);
 }
 /* <<<< Button  >>>> */
-/* <<<<  >>>> */
-/* <<<<  >>>> */
+
+/* <<<< Content style for form loginRegister >>>> */
+.content{
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.content_title{
+  display: block;
+  font-family: var(--bold) !important;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: var(--colorNavyBlue);
+}
+.content_text{
+  display: block;
+  font-family: var(--bold) !important;
+  font-size: 1.2rem !important;
+  font-weight: 500;
+  color: var(--colorGray);
+}
+/* <<<< Content style for form loginRegister >>>> */
+/* <<<< form login-Register style >>>> */
+.form{
+  display: block;
+  width: 100%;
+}
+.form_input{
+  display: block;
+  width: 100%;
+  height: 3rem;
+  outline: none;
+  border: 1px solid var(--colorBrown);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding-right: 0.4rem;
+  font-family: var(--black);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--colorNavyBlue);
+}
+.form_link_forget{
+  display: block;
+  text-decoration: none;
+  color: red;
+  font-family: var(--black);
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: all 0.4s ease-out;
+}
+.form_link_forget:hover{
+  color: var(--colorBrown);
+}
+.form_submit{
+  border: none;
+  outline: none;
+  margin-top: 2rem;
+  width: 100%;
+}
+/* <<<< form login-Register style >>>> */
