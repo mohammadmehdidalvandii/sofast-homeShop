@@ -70,7 +70,7 @@ function Navbar() {
                     <Link href='/Wishlist' className={style.navbar_link_menu}>
                         <span className={style.navbar_link_icon}><FaRegHeart/></span>
                     </Link>
-                    <Link href='/' className={style.navbar_link_menu}>
+                    <Link href='/Basket' className={style.navbar_link_menu}>
                         <span className={style.navbar_link_icon}>
                             <FiShoppingCart/>
                         </span>

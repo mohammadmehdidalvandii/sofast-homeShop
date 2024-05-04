@@ -1,0 +1,124 @@
+.basket{
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+}
+.basket_Items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--colorGray);
+}
+.basket_item{
+    display: block;
+    margin-bottom: 1rem;
+}
+.basket_item_img{
+    width: 150px;
+}
+.basket_item_title{
+    display: block;
+    font-family: var(--black) !important;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--colorBlack);
+}
+.basket_item_text{
+    display: block;
+    font-family: var(--bold) !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--colorBrown);
+}
+.basket_item_counter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--colorBrown);
+    border-radius: 0.6rem;
+    padding: 1rem;
+}
+.basket_item_plus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--colorBrown);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: var(--colorWhite);
+    transition: all 0.4s ease-out;
+}
+.basket_item_plus:hover{
+    background-color: var(--colorNavyBlue);
+}
+.basket_item_number{
+    margin: 0 0.4rem;
+    font-size: 1.6rem;
+    color: var(--colorBlack);
+}
+.basket_item_minus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: var(--colorBrown);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: var(--colorWhite);
+    transition: all 0.4s ease-out;
+}
+.basket_item_minus:hover{
+    background-color: var(--colorNavyBlue);
+}
+.basket_item_delete{
+    outline: none;
+    border: none;
+}
+
+.basket_result{
+    display: block;
+    text-align: center;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px solid var(--colorGray);
+    border-radius: 1rem;
+}
+.basket_result_title{
+    display: block;
+    font-family: var(--black) !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--colorBrown);
+}
+.basket_result_price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}   
+.basket_result_text{
+    display: block;
+    font-family: var(--bold) !important;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--colorBlack);
+}
+.basket_result_number{
+    display: block;
+    font-family: var(--bold) !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--colorBlack);
+}
+.basket_result_pay{
+    width: 100%;
+}
