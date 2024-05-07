@@ -28,13 +28,13 @@ export async function POST (req){
 
         await UserModel.findOneAndUpdate(
             {email},
-            {$set:{refreshToken}}
+            {$set:{refreshToken,}}
         );
 
         return Response.json(
             {message: "User Logged in Successfully"},
             {
-                status: 201,
+                status: 200,
                 headers:{
                     "Set-cookie": `token${accessToken};path=/,httpOnly=true`
                 }
