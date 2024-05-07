@@ -1,0 +1,56 @@
+.users{
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+}
+.users_items{
+    display: block;
+   padding: 1rem;
+    width: 100%;
+    box-shadow: 0 0 15px 8px #eeeeee;
+    border-radius: 1rem;
+}
+.users_item{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    margin-bottom: 1rem;
+}
+.users_item_btn{
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    font-family: var(--bold) !important;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: unset;
+    border-radius: 0.6rem;
+    transition: all 0.4s ease-out;
+}
+.users_item_btn:hover{
+    background-color: var(--colorBrown);
+    color: var(--colorWhite);
+}
+
+.users_item_btn_active{
+    width: 100%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    font-family: var(--bold) !important;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--colorWhite);
+    background-color: var(--colorBrown);
+    border-radius: 0.6rem;
+    transition: all 0.4s ease-out;
+}
+.users_item_btn_delete{
+    background-color: red;
+    color: var(--colorWhite);
+}
+.users_item_btn_delete:hover{
+    background-color: var(--colorNavyBlue);
+    color: var(--colorWhite);
+}
