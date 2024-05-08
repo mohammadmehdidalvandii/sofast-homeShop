@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import style from './Users.module.css';
+import Dashboard from '../Dashboard/Dashboard';
 
 function Users() {
     const [menuAccount , setMenuAccount] = useState("dashboard");
@@ -41,7 +42,7 @@ function Users() {
                     </ul>
                 </div>
                 <div className="col-lg-9 col-md-9 col-sm-12">
-                    {menuAccount === "dashboard" && (<h1>dashboard</h1>)}
+                    {menuAccount === "dashboard" && (<Dashboard/>)}
                     {menuAccount === "orders" && (<h1>orders</h1>)}
                     {menuAccount === "address" && (<h1>address</h1>)}
                     {menuAccount === "account_detail" && (<h1>account_detail</h1>)}
