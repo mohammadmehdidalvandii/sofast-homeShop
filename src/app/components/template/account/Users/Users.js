@@ -4,6 +4,7 @@ import style from './Users.module.css';
 import Dashboard from '../Dashboard/Dashboard';
 import Order from '../Order/Order';
 import Address from '../Address/Address';
+import Details from '../Details/Details';
 
 
 function Users() {
@@ -48,7 +49,7 @@ function Users() {
                     {menuAccount === "dashboard" && (<Dashboard/>)}
                     {menuAccount === "orders" && (<Order/>)}
                     {menuAccount === "address" && (<Address/>)}
-                    {menuAccount === "account_detail" && (<h1>account_detail</h1>)}
+                    {menuAccount === "account_detail" && (<Details/>)}
                 </div>
             </div>
         </div>
