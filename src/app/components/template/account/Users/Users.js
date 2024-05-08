@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import style from './Users.module.css';
 import Dashboard from '../Dashboard/Dashboard';
 import Order from '../Order/Order';
+import Address from '../Address/Address';
 
 
 function Users() {
@@ -46,7 +47,7 @@ function Users() {
                 <div className="col-lg-9 col-md-9 col-sm-12">
                     {menuAccount === "dashboard" && (<Dashboard/>)}
                     {menuAccount === "orders" && (<Order/>)}
-                    {menuAccount === "address" && (<h1>address</h1>)}
+                    {menuAccount === "address" && (<Address/>)}
                     {menuAccount === "account_detail" && (<h1>account_detail</h1>)}
                 </div>
             </div>
