@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import style from './Register.module.css';
 // import { validationEmail ,validationPassword  } from '@/utils/auth';
@@ -118,7 +119,7 @@ Register() {
                 <input type='checkBox' className="form_very_input" />
                 <span className="form_very_text">من شرایط و ضوابط را خوانده ام و با آن موافقم</span>
             </div>
-            <button className="form_submit button" onClick={signUp}>ورود</button>
+            <button className="form_submit button" onClick={signUp}>ثبت نام</button>
         </form>
     </section>
   )

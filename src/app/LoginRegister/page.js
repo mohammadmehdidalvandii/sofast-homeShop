@@ -1,4 +1,3 @@
-"use client";
 import React from 'react'
 import Navbar from '../components/module/Navbar/Navbar'
 import PageHeader from '../components/module/PageHeader/PageHeader'
