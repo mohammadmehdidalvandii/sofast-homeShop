@@ -6,11 +6,14 @@ import Overview from '../components/module/Overview/Overview'
 import Footer from '../components/module/Footer/Footer'
 import Login from '../components/template/loginRegister/Login/Login'
 import Register from '../components/template/loginRegister/Register/Register'
+import { authUser } from '@/utils/auth';
 
-function page() {
+async function page() {
+  const user = await authUser();
+
   return (
     <>
-    <Navbar/>
+    <Navbar isLogin={user ? true : false}/>
     <PageHeader title='ورود / ثبت نام' text='ورود / ثبت نام'/>
         <div className="container">
             <div className="row mt-5">

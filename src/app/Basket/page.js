@@ -5,10 +5,11 @@ import Overview from '../components/module/Overview/Overview';
 import Footer from '../components/module/Footer/Footer';
 import Basket from '../components/template/Basket/Basket';
 
-function page() {
+async function page() {
+  const user = await authUser();
   return (
     <>
-    <Navbar/>
+    <Navbar isLogin={user ? true :false}/>
     <PageHeader title='سبد خرید' text='سبد خرید'/>
     <Basket/>
     <Overview/>

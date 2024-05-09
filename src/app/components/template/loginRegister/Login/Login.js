@@ -29,7 +29,7 @@ function Login() {
         icon:"success",
         buttons:"ورود به پنل کاربری",
       }).then(()=>{
-        location.replace('/')
+        location.replace('/Account')
       })
     } else if(res.status === 422 || res.status === 401){
       swal({

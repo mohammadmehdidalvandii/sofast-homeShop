@@ -5,11 +5,14 @@ import Footer from '../components/module/Footer/Footer';
 import PageHeader from '../components/module/PageHeader/PageHeader';
 import About from '../components/template/about/About/About';
 import Teams from '../components/template/about/Teams/Teams';
+import { authUser } from '@/utils/auth';
 
-function page() {
+
+async function page() {
+  const user = await authUser()
   return (
     <>
-    <Navbar/>
+    <Navbar isLogin={user ?true : false}/>
     <PageHeader 
         title='درباره ما'
         text='درباره ما'

@@ -4,11 +4,13 @@ import PageHeader from '../components/module/PageHeader/PageHeader'
 import Overview from '../components/module/Overview/Overview'
 import Footer from '../components/module/Footer/Footer'
 import WishlistCard from '../components/module/WishlistCard/WishlistCard'
+import { authUser } from '@/utils/auth'
 
-function page() {
+async function page() {
+  const user = await authUser();
   return (
     <>
-    <Navbar/>
+    <Navbar isLogin={user ? true :false}/>
     <PageHeader title='علاقه مندی' text='علاقه مندی'/>
         <div className="container">
             <div className="row mt-5">

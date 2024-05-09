@@ -6,10 +6,11 @@ import { FaUser } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaBars , FaTimes } from "react-icons/fa";
+import { BsPersonVcard } from "react-icons/bs";
 import { usePathname } from 'next/navigation';
 
 
-function Navbar() {
+function Navbar({isLogin}) {
     const [showMenu , setShowMenu] = useState(false)
     const [routesMenu , setRouteMenu] = useState('/')
     const [fixedNavbar , setFixedNavbar]= useState(false)
@@ -64,9 +65,16 @@ function Navbar() {
                 </ul>
 
                 <div className={style.navbar_wrapper_link}>
-                    <Link href='/LoginRegister' className={style.navbar_link_menu}>
-                        <span className={style.navbar_link_icon}><FaUser/></span>
+                    {!isLogin ?(
+                            <Link href='/LoginRegister' className={style.navbar_link_menu}>
+                            <span className={style.navbar_link_icon}><FaUser/></span>
+                        </Link>
+                    ):(
+                        <Link href='/Account' className={style.navbar_link_menu}>
+                        <span className={style.navbar_link_icon}><BsPersonVcard/></span>
                     </Link>
+                    )}
+                
                     <Link href='/Wishlist' className={style.navbar_link_menu}>
                         <span className={style.navbar_link_icon}><FaRegHeart/></span>
                     </Link>

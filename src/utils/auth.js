@@ -68,8 +68,8 @@ const validationPassword = (password)=>{
 
 
 const authUser = async ()=>{
-    connectToDB()
-    const token = cookies.get("token");
+    connectToDB();
+    const token = cookies().get("token");
     let user = null;
     if(token){
         const tokenPayload = verifyAccessToken(token.value);

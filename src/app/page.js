@@ -9,11 +9,13 @@ import Comments from './components/template/home/Comments/Comments'
 import Blog from './components/template/home/Blog/Blog'
 import Overview from './components/module/Overview/Overview'
 import Footer from './components/module/Footer/Footer'
+import { authUser } from '@/utils/auth'
 
-function page() {
+async function page() {
+  const user = await authUser();
   return (
     <>
-      <Navbar/>
+      <Navbar isLogin={user ? true :false}/>
       <Banner/>
       <Trending/>
       <Product/>
