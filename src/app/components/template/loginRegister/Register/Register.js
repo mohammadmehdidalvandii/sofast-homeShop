@@ -30,31 +30,31 @@ Register() {
       })
     }
 
-    // if(email){
-    //   const isValidEmail = validationEmail(email);
-    //   if(!isValidEmail){
-    //     swal({
-    //       title:"ایمیل معتبر نیست",
-    //       icon:"error",
-    //       buttons:"تلاش مجدد"
-    //     })
-    //   }
-    // }
+    if(email){
+      const isValidEmail = validationEmail(email);
+      if(!isValidEmail){
+        swal({
+          title:"ایمیل معتبر نیست",
+          icon:"error",
+          buttons:"تلاش مجدد"
+        })
+      }
+    }
 
-    // const isValidPassword = validationPassword(password);
-    // if(!isValidPassword){
-    //   swal({
-    //     title:"رمز عبور معتبر نیست",
-    //     icon:"error",
-    //     buttons:"تلاش مجدد"
-    //   })
-    // } else if (password !== passwordVerify){
-    //   swal({
-    //     title:"رمز عبور هماهنگ  نیست",
-    //     icon:"error",
-    //     buttons:"تلاش مجدد"
-    //   })
-    // }
+    const isValidPassword = validationPassword(password);
+    if(!isValidPassword){
+      swal({
+        title:"رمز عبور معتبر نیست",
+        icon:"error",
+        buttons:"تلاش مجدد"
+      })
+    } else if (password !== passwordVerify){
+      swal({
+        title:"رمز عبور هماهنگ  نیست",
+        icon:"error",
+        buttons:"تلاش مجدد"
+      })
+    }
 
     const user = {name , email , password}
 
