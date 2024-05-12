@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import style from './Register.module.css';
-// import { validationEmail ,validationPassword  } from '@/utils/auth';
+import { validationEmail ,validationPassword  } from '@/utils/auth';
 import swal from 'sweetalert';
 
 
@@ -30,7 +30,7 @@ Register() {
       })
     }
 
-    if(email){
+  
       const isValidEmail = validationEmail(email);
       if(!isValidEmail){
         swal({
@@ -39,7 +39,7 @@ Register() {
           buttons:"تلاش مجدد"
         })
       }
-    }
+
 
     const isValidPassword = validationPassword(password);
     if(!isValidPassword){

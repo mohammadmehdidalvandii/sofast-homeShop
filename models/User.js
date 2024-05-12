@@ -18,9 +18,11 @@ const schema = new mongoose.Schema({
     role:{
         type: String,
         default:"User"
-    }
+    },
+
+    refreshToken : String,
 })
 
 
 const model = mongoose.model.User || mongoose.model("User" , schema);
-export default model;
+module.exports = model;

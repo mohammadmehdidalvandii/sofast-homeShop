@@ -1,6 +1,6 @@
 import { hash , compare } from "bcryptjs";
 import { sign, verify } from "jsonwebtoken";
-import { cookies } from "next/headers";
+const cookies = require('next/headers')
 import UserModel from '@/models/User';
 import connectToDB from "@/config/db";
 
