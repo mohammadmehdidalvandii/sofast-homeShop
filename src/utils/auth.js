@@ -1,8 +1,12 @@
+"use server"
 import { hash , compare } from "bcryptjs";
 import { sign, verify } from "jsonwebtoken";
-const cookies = require('next/headers')
 import UserModel from '@/models/User';
 import connectToDB from "@/config/db";
+import { cookies } from "next/headers";
+
+
+
 
 // create hash-password
 
@@ -59,7 +63,7 @@ const validationEmail = (email)=>{
 // validation password
 
 const validationPassword = (password)=>{
-    const pattern =     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/g;
+    const pattern =/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/g;
     return pattern.test(password)
 }
 
